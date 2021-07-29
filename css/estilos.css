@@ -88,6 +88,9 @@ body {
   color: #2153cc;
   font-weight: bold; }
 
+.cardsProductos {
+  margin-left: 15px; }
+
 .virtual {
   margin-left: 10vh;
   margin-bottom: 9vh;
@@ -247,18 +250,41 @@ img.sta {
   background-color: #688de7;
   color: #133178; }
 
-.card1 {
-  margin-right: 1vh; }
+.dropdown {
+  display: flex; }
 
-.card2 {
-  margin-left: 1vh; }
+.btnVolver {
+  margin-left: 2vh;
+  margin-top: 2vh;
+  background-color: #dfe7fa;
+  display: flex;
+  border-radius: .25rem; }
+  .btnVolver:hover {
+    background-color: #4774e1;
+    color: #030712;
+    text-decoration: none; }
+
+.card1 {
+  align-items: center;
+  width: 337.25px;
+  min-height: 450px; }
 
 .card-body {
   color: #133178; }
 
 .btnCarrito {
+  display: flex;
   background-color: #030712;
-  color: #4774e1; }
+  color: #4774e1;
+  align-items: center; }
+  .btnCarrito:hover {
+    background-color: #4774e1;
+    color: #030712; }
+
+.card-title__modifier {
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center; }
 
 .modal-header {
   font-weight: 700;
