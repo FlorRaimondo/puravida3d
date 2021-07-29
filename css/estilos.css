@@ -89,7 +89,7 @@ body {
   display: grid;
   grid-template-areas: "tit tit" "conRed ubi"; }
 
-.subtituloContacto {
+.subtitulo {
   color: #5881e4;
   font-weight: 300;
   font-size: 30px;
