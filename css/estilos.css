@@ -89,7 +89,7 @@ body {
   display: grid;
   grid-template-areas: "tit tit" "conRed ubi"; }
 
-.subtitulo {
+#subtitulo {
   color: #5881e4;
   font-weight: 300;
   font-size: 30px;
@@ -122,7 +122,7 @@ body {
     box-sizing: border-box;
     display: grid;
     grid-template-areas: "tit" "conRed" "ubi"; }
-  .subtitulo {
+  #subtitulo {
     padding: 5px;
     color: #5881e4;
     font-weight: 300;
@@ -156,7 +156,7 @@ body {
     box-sizing: border-box;
     display: grid;
     grid-template-areas: "tit" "conRed" "ubi"; }
-  .subtitulo {
+  #subtitulo {
     padding: 5px;
     color: #5881e4;
     font-weight: 300;
