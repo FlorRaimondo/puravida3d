@@ -70,32 +70,152 @@ body{
 	}
 }
 
-.contacto{
-	color: #9bb4ef;
-	font-size: 700;
-	margin-left: 2%;
-	margin-top: 2%;
-	padding: 10px;
-	display: inline;
-	border:  solid #4774e1;
-	border: 50%;
-	float: left;
-	background: linear-gradient(to top, #081534 , #193e99);
-	.contacto__titulo{
-		color: #000101;
-		text-transform: uppercase;
-		font-size: 110%;
-		font-weight: 900;
-		line-height: 2rem;
-		word-spacing: 0.3rem;
-	}
+.redesRecibe{
+	margin-top: 40%;
+	list-style-position: inside;
+	font-size: 1rem;
+	margin-left: 2vh;
+	margin-right: 2vh;
+
 	& a:hover{
-		color:#f0f3fc;
+		color:#21a9cc;
 		text-decoration:none;
 		text-transform:uppercase;
 	}
 }
 
+.contactoTitulo{
+	padding: 15px;
+	font-size: 1.5rem;
+	font-weight: 800;
+	word-spacing: 0.3rem;
+	text-align: center;
+	background-color: rgba(155, 180, 239,.55);
+	color: #081534;
+	grid-area:tit;
+}
+.contactoUbi{
+	grid-area:ubi;
+	align-items: center;
+	text-align: center;
+	padding: 15px;
+}
+
+.contactoRedes{
+	grid-area:conRed;
+	align-content: center;
+	padding: 15px;
+}
+
+.boxContacto{
+	display: grid;
+	grid-template-areas: 
+	"tit tit"
+	"conRed ubi";
+}
+
+.subtituloContacto{
+	color: #5881e4;
+	font-weight: 300;
+	font-size: 30px;
+	background-color:  #081534;
+	color:#8aa7ec;
+	text-align: center;
+}
+
+@media all and (max-width: 992px){
+	.contactoTitulo{
+	font-size: 25px;
+	font-weight: 800;
+	word-spacing: 0.3rem;
+	text-align: center;
+	background-color: rgba(155, 180, 239,.55);
+	color: #081534;
+	grid-area:tit;
+}
+.contactoUbi{
+	grid-area:ubi;
+	align-items: center;
+	text-align: center;
+	padding: 15px;
+	iframe{
+	width: 400px;
+	height: 100px;
+	}
+}
+
+.contactoRedes{
+	grid-area:conRed;
+	text-align: left;
+	padding: 15px;
+}
+
+.boxContacto{
+	box-sizing: border-box;
+	display: grid;
+	grid-template-areas: 
+	"tit"
+	"conRed"
+	"ubi";
+}
+.subtituloContacto{
+	padding:5px;
+	color: #5881e4;
+	font-weight: 300;
+	font-size: 30px;
+	background-color:  #081534;
+	color:#8aa7ec;
+	text-align: left;
+}
+
+}
+
+@media all and (max-width: 576px){
+	.contactoTitulo{
+	font-size: 25px;
+	font-weight: 800;
+	word-spacing: 0.3rem;
+	text-align: center;
+	background-color: rgba(155, 180, 239,.55);
+	color: #081534;
+	grid-area:tit;
+}
+.contactoUbi{
+	grid-area:ubi;
+	align-items: center;
+	text-align: center;
+	padding: 15px;
+	iframe{
+	width: 200px;
+	height: 100px;
+	}
+}
+
+.contactoRedes{
+	grid-area:conRed;
+	text-align: left;
+	padding: 15px;
+}
+
+.boxContacto{
+	box-sizing: border-box;
+	display: grid;
+	grid-template-areas: 
+	"tit"
+	"conRed"
+	"ubi";
+}
+.subtituloContacto{
+	padding:5px;
+	color: #5881e4;
+	font-weight: 300;
+	font-size: 30px;
+	background-color:  #081534;
+	color:#8aa7ec;
+	text-align: left;
+}
+
+}
 
 .lista{
 	list-style-position: inside;
@@ -423,6 +543,18 @@ form{
 		color: #060e23;
 	}
 	}
+}
+
+.subtituloForm{
+	color: #5881e4;
+	font-weight: 300;
+	font-size: 30px;
+}
+
+.recibe{
+	font-weight:800;
+	font-size:30px;
+	text-align: center;
 }
 
 @media screen and (max-width: 768px) {

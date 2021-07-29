@@ -52,18 +52,22 @@
 			</div>
 		</div>
 
-		<div class="virtual">Modalidad virtual
+		<div class="virtual">
+			<p>Modalidad virtual</p>
 			<div><iframe width="560" height="315" src="https://www.youtube.com/embed/m-wTb_9elw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 		</div>
 
 		<div class="presencial">
-			<div>Modalidad presencial
+			<div>
+				<p>Modalidad presencial</p>
+
 				<form action="recibe.html" method="POST" enctype="multipart/form-data" target="_blank">
+					<div class="subtituloForm">Nombre y apellido</div>
 					<p><input type="text" name="nombre" placeholder="Ingresa tu nombre" for="nombre"></p>
+					<div class="subtituloForm">Email</div>
 					<p><input type="email" placeholder="Ingresa tu mail" name="email"></p>
-					<p><input type="phone" placeholder="Ingresa tu celular" name="celular"></p>
-					<input class="curPres" type="submit" name="enviar" value="ENVIAR">
-					<input class="curPres" type="reset" value="LIMPIAR">
+					<input class="btn curPres" type="submit" name="enviar" value="ENVIAR">
+					<input class="btn curPres" type="reset" value="LIMPIAR">
 				</form>
 			</div>
 		</div>
@@ -75,5 +79,8 @@
 		</a>
 	</div>
 	<div class="footer"></div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
