@@ -22,17 +22,14 @@ body {
   letter-spacing: 0.5rem;
   text-decoration-line: none; }
 
-.slideshow img {
-  width: 100%;
-  height: 100%; }
-
 .titulo {
   font-size: 1.5rem;
   font-weight: 800;
   word-spacing: 0.3rem;
   margin-top: 2vh;
   margin-left: 2vh;
-  text-align: left; }
+  text-align: left;
+  wrap: wrap; }
   .titulo .titulo__cursos {
     margin-bottom: 5vh;
     font-size: 2rem;
@@ -206,40 +203,6 @@ body {
     background-color: white;
     color: #133178; }
 
-.logo {
-  grid-area: log; }
-
-.inicio {
-  grid-area: in; }
-
-.productos {
-  grid-area: pro; }
-
-.servicios {
-  grid-area: ser; }
-
-.nosotros {
-  grid-area: nos; }
-
-.contactoGrid {
-  grid-area: con; }
-
-.titulosTablas {
-  text-transform: uppercase;
-  color: #3667de; }
-
-#datosTablas {
-  text-align: left;
-  line-height: 1.6;
-  color: #255adc; }
-
-.listaTablas {
-  list-style-position: inside;
-  color: #2153cc; }
-
-.listaUsosTablas {
-  text-align: center; }
-
 .wpp {
   width: 70px;
   position: fixed;
@@ -247,13 +210,8 @@ body {
   right: 2%; }
 
 .newsYRed {
-  display: flex; }
-
-.newsletterSASS {
-  width: 674.5px; }
-
-.redesSASS {
-  width: 674.5px; }
+  display: flex;
+  flex-wrap: wrap; }
 
 @media all and (max-width: 576px) {
   .newsletter {
@@ -262,68 +220,10 @@ body {
     grid-area: redHome; }
   .gridNews {
     display: grid;
-    grid-template-areas: "new" "redHome"; } }
-
-img.ban {
-  width: 250px;
-  height: 250px;
-  transition: 2s; }
-
-.ban:hover {
-  height: 300px;
-  width: 300px; }
-
-img.gow {
-  width: 250px;
-  height: 250px;
-  transition: 2s; }
-
-.gow:hover {
-  height: 300px;
-  width: 300px; }
-
-img.nar {
-  width: 250px;
-  height: 250px;
-  transition: 2s; }
-
-.nar:hover {
-  height: 300px;
-  width: 300px; }
-
-img.sta {
-  width: 250px;
-  height: 250px;
-  transition: 2s; }
-
-.sta:hover {
-  height: 300px;
-  width: 300px; }
-
-.port {
-  grid-area: port; }
-
-.ban {
-  grid-area: ban; }
-
-.gow {
-  grid-area: gow; }
-
-.nar {
-  grid-area: nar; }
-
-.sta {
-  grid-area: sta; }
-
-.gridPortajo {
-  display: grid;
-  grid-template-areas: "port" "ban" "gow" "nar" "sta"; }
-
-@media all and (min-width: 768px) {
-  .gridPortajo {
-    display: grid;
-    grid-template-areas: "port" "ban" "gow" "nar" "sta";
-    grid-template-areas: "port port port" "ban . gow" "nar . sta"; } }
+    grid-template-areas: "new" "redHome"; }
+    .gridNews .newsYRed {
+      display: flex;
+      flex-wrap: wrap; } }
 
 .dropdown-item {
   color: #060e23;
