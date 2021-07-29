@@ -42,9 +42,6 @@ body{
 	margin-top: 2vh;
 	margin-left: 2vh;
 	text-align: left;
-	.titulo__newsletter{
-		text-transform: uppercase;
-	}
 	.titulo__cursos{
 	margin-bottom: 5vh;
 	font-size: 2rem;
@@ -193,20 +190,32 @@ body{
 	right: 2%;
 }
 
-$ancho: 1349px;
-.newsYRed{
-	display: flex;
-
+.newsYRed {
+  display: flex; 
 }
 
-.newsletterSASS{
-	width: $ancho/2;
+.newsletterSASS {
+  width: 674.5px; 
 }
 
-.redesSASS{
-	width: $ancho/2;
+.redesSASS {
+  width: 674.5px; 
 }
 
+@media all and (max-width: 576px){
+	.newsletter{
+		grid-area: new;
+	}
+	.redesHome{
+		grid-area: redHome;
+	}
+	.gridNews{
+		display: grid;
+		grid-template-areas: 
+		"new"
+		"redHome";
+}
+}
 
 img.ban{
 	width: 250px;
@@ -344,32 +353,28 @@ img.sta{
 	color: #030712;
 }
 
-.carouselExampleIndicators{
-    box-sizing: content-box;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    width: 30px;
-    height: 3px;
-    margin-right: 3px;
-    margin-left: 3px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: #000101;
-    background-clip: padding-box;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    opacity: .5;
-    transition: opacity .4s ease;
+@media all and (min-width: 577px){
+.carouselResp{
+	display: none;
 }
 
+}
+
+@media all and (max-width: 576px){
+	
+.carouselGrande{
+	display:none;
+}
+
+}
 
 .btn{
 	.btn__submit{
-	background-color: #000;
-	color: #688de7;
-	&:hover{
 	background-color: #688de7;
 	color: #000;
+	&:hover{
+	background-color:#000 ;
+	color: #688de7;
 	}
 }
 }
