@@ -118,6 +118,7 @@ body{
 	text-align: center;
 }
 
+
 @media all and (max-width: 992px){
 	.contactoTitulo{
 	font-size: 25px;
@@ -447,7 +448,7 @@ form{
 	font-size: 30px;
 	text-transform: uppercase;
 	text-align:center;
-	color: #030712;
+	color: #030712 ;
 }
 
 .divisorNosotrosOscuro{
@@ -480,7 +481,7 @@ form{
 
 .col-sm__materiales{
 	margin: 20px;
-	background-color: #112a67;
+	background-color: rgba(255, 255, 252, 0.2);
 	h3{
 		margin: 10px;
 		color: #0b1c45;
@@ -492,7 +493,7 @@ form{
 }
 
 #materiales{
-	color: #f0f3fc;
+	color: #0b1c45;
 	font-weight:bold;
 }
 
